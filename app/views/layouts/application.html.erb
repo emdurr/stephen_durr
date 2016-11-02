@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StephenDurr</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<div class="nav-wrapper backing">
+  		<a href="#" class="brand-logo log">Logo</a>
+  		<div class="right hide-on-med-and-down">
+	  		<ul id="nav-mobile">
+	  			<div class="right">
+		  			<li class="l-mar" ><a href="about.html">About Me</a></li>
+		  		</div>
+		  		<div class="right">
+		  			<li class="l-mar"><a href="contact.html">Contact Me</a></li>
+		  		</div>
+	  		</ul>
+	  	</div>
+  	</div>
+  	<div class="parallax-container responsive">
+	    <%= yield %>
+    </div>
+    <div>
+    <footer class="page-footer grey">
+      <div>
+        <a href="https://www.youtube.com/channel/UClz-klk20JA8rkSQmcyyy1g">YouTube Channel</a>
+      </div>
+    </footer>
+    </div>
+  </body>
+  
+</html>
